@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PiCloud - Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>PiCloud</h1>
+            <a href="/logout" class="btn logout-btn">Logout</a>
+        </header>
+        <main>
+            <form action="/upload" method="post" enctype="multipart/form-data" class="upload-form">
+                <input type="file" name="file" required>
+                <button type="submit" class="btn primary">Upload File</button>
+            </form>
+            <section>
+                <h2>Available Files</h2>
+                <ul class="file-list">
+                    {% for file in files %}
+                    <li>
+                        <span>{{ file }}</span>
+                        <div class="file-actions">
+                            <a href="{{ url_for('download_file', filename=file) }}" class="btn action-btn">Download</a>
+                            <form action="{{ url_for('delete_file', filename=file) }}" method="POST" style="display:inline;">
+                                <button type="submit" class="btn action-btn delete-btn">Delete</button>
+                            </form>
+                        </div>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

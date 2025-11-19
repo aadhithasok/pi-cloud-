@@ -1,0 +1,188 @@
+/* General styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f7fa;
+    color: #333;
+}
+
+h1 {
+    font-size: 32px;
+    color: #007bff;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+/* Login Page */
+.login-container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-container h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.login-container .btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-container .btn:hover {
+    background-color: #0056b3;
+}
+
+.login-container .error {
+    color: #e60000;
+    margin-top: 10px;
+}
+
+.login-container .credits {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #555;
+}
+
+.login-container .credits p {
+    margin: 5px 0;
+}
+
+/* Dashboard */
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 32px;
+    color: #007bff;
+}
+
+header .btn.logout-btn {
+    background-color: #ff4d4d;
+    font-size: 16px;
+    padding: 12px 20px;
+    text-align: center;
+    border-radius: 8px;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+header .btn.logout-btn:hover {
+    background-color: #e60000;
+}
+
+/* File List and Actions */
+.file-list {
+    list-style: none;
+    padding: 0;
+}
+
+.file-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+    padding: 15px;
+    background-color: #f9fafb;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.file-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.file-actions .btn {
+    padding: 8px 15px;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.file-actions .btn.action-btn {
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+}
+
+.file-actions .btn.action-btn:hover {
+    background-color: #0056b3;
+}
+
+.file-actions .btn.delete-btn {
+    background-color: #ff4d4d;
+}
+
+.file-actions .btn.delete-btn:hover {
+    background-color: #e60000;
+}
+
+/* Upload Form */
+.upload-form {
+    margin-bottom: 30px;
+}
+
+.upload-form input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.upload-form .btn.primary {
+    width: 100%;
+    padding: 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.upload-form .btn.primary:hover {
+    background-color: #0056b3;
+}
